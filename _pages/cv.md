@@ -11,8 +11,14 @@ redirect_from:
 
 Education
 ======
-* <img src="/images/thu_logo.png" alt="THU" style="height:1.1em; vertical-align:-0.2em; margin-right:0.25em;"> **B.Eng. in Automation**, Tsinghua University, Sep 2022 – Present
-  * GPA: **4.0 / 4.0**, Ranked **1 / 145**
+<div class="edu">
+  <img src="/images/thu_logo.png" alt="Tsinghua University" />
+  <div>
+    <strong>B.Eng. in Automation</strong>, Tsinghua University, Sep 2022 – Present<br />
+    GPA: <strong>4.0 / 4.0</strong>, Ranked <strong>1 / 145</strong>
+  </div>
+</div>
+
 * **Ph.D. in Computer Science**, MMLab@HKU, The University of Hong Kong, Sep 2026 – (incoming)
   * Advisors: Prof. Ping Luo, Prof. Hongyang Li, Prof. Yi Ma
 
