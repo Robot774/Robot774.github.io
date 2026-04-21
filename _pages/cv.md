@@ -11,14 +11,21 @@ redirect_from:
 
 Education
 ======
-* B.Eng. in Automation, Tsinghua University, 2022 – 2026 (expected)
-* Ph.D. in Computer Science, MMLab@HKU, The University of Hong Kong, 2026 – (incoming), advised by Prof. Ping Luo, Prof. Hongyang Li, and Prof. Yi Ma
+* **B.Eng. in Automation**, Tsinghua University, Sep 2022 – Present
+  * GPA: **4.0 / 4.0**, Ranked **1 / 145**
+* **Ph.D. in Computer Science**, MMLab@HKU, The University of Hong Kong, Sep 2026 – (incoming)
+  * Advisors: Prof. Ping Luo, Prof. Hongyang Li, Prof. Yi Ma
 
 Research Interests
 ======
 * Robotics
 * Vision-Language-Action (VLA) Models
 * World Models
+
+Honors & Awards
+======
+* **National Scholarship**, Dec 2025
+* **National Scholarship** (Ranked 2 / 145), Dec 2024
 
 Publications
 ======
