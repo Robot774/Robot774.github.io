@@ -1,0 +1,22 @@
+{% include base_path %}
+{% for post in site.publications reversed %}
+<div class="pub-item">
+  {% if post.teaser %}
+    <div class="pub-teaser">
+      <img src="{{ post.teaser | prepend: base_path }}" alt="{{ post.title | escape }}" />
+    </div>
+  {% endif %}
+  <div class="pub-body">
+    <h3 class="pub-title">{{ post.title }}</h3>
+    {% if post.authors %}<p class="pub-authors">{{ post.authors }}</p>{% endif %}
+    {% if post.notes %}<p class="pub-notes">{{ post.notes }}</p>{% endif %}
+    {% if post.venue %}<p class="pub-venue"><em>{{ post.venue }}{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</em></p>{% endif %}
+    {% if post.excerpt %}<p class="pub-excerpt">{{ post.excerpt | markdownify | strip_html | strip }}</p>{% endif %}
+    <p class="pub-links">
+      {% if post.projecturl %}<a href="{{ post.projecturl }}">Project Page</a>{% endif %}
+      {% if post.paperurl %}{% if post.projecturl %} · {% endif %}<a href="{{ post.paperurl | prepend: base_path }}">Paper</a>{% endif %}
+      {% if post.codeurl %}{% if post.projecturl or post.paperurl %} · {% endif %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+    </p>
+  </div>
+</div>
+{% endfor %}

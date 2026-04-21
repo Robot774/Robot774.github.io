@@ -9,37 +9,49 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+🎓 Education
 ======
 <div class="edu">
   <img src="/images/thu_logo.png" alt="Tsinghua University" />
   <div>
-    <strong>B.Eng. in Automation</strong>, Tsinghua University, Sep 2022 – Present<br />
-    GPA: <strong>4.0 / 4.0</strong>, Ranked <strong>1 / 145</strong>
+    <strong>B.Eng. in Automation</strong><br />
+    Department of Automation, Tsinghua University<br />
+    Sep 2022 – Present · GPA <strong>4.0 / 4.0</strong> · Ranked <strong>1 / 145</strong>
   </div>
 </div>
 
-* **Ph.D. in Computer Science**, MMLab@HKU, The University of Hong Kong, Sep 2026 – (incoming)
-  * Advisors: Prof. Ping Luo, Prof. Hongyang Li, Prof. Yi Ma
+<div class="entry">
+  <strong>Ph.D. in Computer Science</strong> (incoming, Sep 2026)<br />
+  MMLab, The University of Hong Kong<br />
+  Advisors: Prof. Ping Luo, Prof. Hongyang Li, Prof. Yi Ma
+</div>
 
-Experience
+💼 Experience
 ======
-* **Research Intern**, Multimodal Intelligence Department, Robotics Center, XPENG, Shenzhen — Jul 2025 – Present
-  * Supervised by Yuying Ge and Yixiao Ge
+<div class="edu">
+  <img src="/images/xpeng_logo.png" alt="XPENG" />
+  <div>
+    <strong>Research Intern</strong>, XPENG, Shenzhen<br />
+    Multimodal Intelligence Department, Robotics Center<br />
+    Jul 2025 – Present · Supervised by Yuying Ge and Yixiao Ge
+  </div>
+</div>
 
-Research Interests
+🔭 Research Interests
 ======
 * Robotics
 * Vision-Language-Action (VLA) Models
 * World Models
 
-Honors & Awards
+🏆 Honors & Awards
 ======
 * **National Scholarship** (highest scholarship given by the government of China), Dec 2025
 * **National Scholarship** (highest scholarship given by the government of China), Dec 2024
-* **Tsinghua University Comprehensive Excellence Scholarship** (Top 10 / 145), Dec 2023
+* Tsinghua University Comprehensive Excellence Scholarship (Top 10 / 145), Dec 2023
+* First Prize, National College Mathematics Competition (Non-Math Group A), Dec 2023
+* First Prize, National College Physics Competition (Non-Physics Group A), Dec 2023
 
-Publications
+📝 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}

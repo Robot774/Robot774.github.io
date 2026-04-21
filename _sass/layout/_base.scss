@@ -375,8 +375,8 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   margin-bottom: 1em;
 
   img {
-    width: 72px;
-    max-width: 72px;
+    width: 100px;
+    max-width: 100px;
     height: auto;
     margin-right: 16px;
     flex-shrink: 0;
@@ -385,5 +385,90 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   > div {
     font-size: 1em;
     line-height: 1.5;
+  }
+}
+
+/* Plain (no-logo) timeline entry, visually parallel to .edu */
+.entry {
+  margin-bottom: 1em;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Publication list item: teaser on the left, body on the right */
+.pub-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .pub-teaser {
+    flex: 0 0 260px;
+    margin-right: 22px;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-1px);
+    }
+  }
+
+  .pub-body {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    .pub-title {
+      margin: 0 0 0.4em 0;
+      font-size: 1.05em;
+      line-height: 1.3;
+    }
+
+    .pub-authors,
+    .pub-notes,
+    .pub-venue,
+    .pub-excerpt,
+    .pub-links {
+      margin: 0 0 0.35em 0;
+      font-size: 0.95em;
+      line-height: 1.45;
+    }
+
+    .pub-notes {
+      color: var(--global-fig-caption-color);
+      font-size: 0.85em;
+    }
+
+    .pub-links a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .pub-item {
+    flex-direction: column;
+    align-items: stretch;
+
+    .pub-teaser {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 0.75em;
+      aspect-ratio: 16 / 9;
+    }
   }
 }
